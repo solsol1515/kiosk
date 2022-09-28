@@ -1,41 +1,42 @@
 package kiosk;
 
 import java.awt.BorderLayout;
-import java.awt.Panel;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTabbedPane;
+import javax.swing.JTextField;
 
 public class MainTest {
 
-	JFrame f;
-	JButton btn;
-	JLabel lab;
+	JFrame f;		   // 프레임
+	JButton btn;	   // 버튼
+	JLabel lab;		   // 라벨
+	JTextField tfMenu; // 결제창(메뉴) 
+	JTextField tfCost; // 결제창(금액) 
 	
-	Panel panelA;
-	Panel panelB;
-	Panel panelC;
-	Panel panelD;
+	PanelA panelA;
+	PanelB panelB;
+	PanelC panelC;
+	PanelD panelD;
 	
 	MainTest(){
-		
+		// * 프레임
 		f = new JFrame("Kiosk 주문창");
 		
-		panelA = new Panel();
-		panelB = new Panel();
-		panelC = new Panel();
-		panelD = new Panel();
+		// * (상단) 패널
+		panelA = new PanelA(this);
+		panelB = new PanelB(this);
+		panelC = new PanelC(this);
+		panelD = new PanelD(this);
+		
+		// * 메뉴
+		//tfMenu = new JTextField("결제창");
+		//tfCost = new JTextField("결제창");
+		// * 주문 메뉴 입력창
 		
 	} // end of MainTest
-	
-	public static void main(String[] args) {
-
-		MainTest test = new MainTest();
-		//f.addLayout();
-		//f.eventProc();
-	} // end of main
 	
 	void addLayout(){
 		
@@ -45,15 +46,27 @@ public class MainTest {
 		tab.addTab("메인 메뉴", panelA);
 		tab.addTab("사이드 메뉴", panelB);
 		tab.addTab("음료", panelC);
-		tab.addTab("주류", panelC);
+		tab.addTab("주류", panelD);
 		
-		f.setBounds(100, 100, 500, 400);
+		f.setBounds(300, 100, 500, 800);
 		f.setVisible(true);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-	} // addLayout()
+	} // end of addLayout()
 	
 	void eventProc() {
 		
 	} // end of eventProc()
+	
+	public static void main(String[] args) {
+
+		MainTest test = new MainTest();
+		test.addLayout();
+		test.eventProc();
+		
+	} // end of main
+	
+
 }
+
+
