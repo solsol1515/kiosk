@@ -44,37 +44,37 @@ public class PanelA extends JPanel{
 		aCenter.add(aBtn1); // 패널에 버튼 추가하기(후라이드치킨)
 			aBtn1.setHorizontalTextPosition(JButton.CENTER); // 버튼 중앙에 사진 붙이기
 			aBtn1.setVerticalTextPosition(JButton.BOTTOM);	// 버튼 아래에 메뉴명 붙이기
-			aBtn1.setText("후라이드치킨 18,000원"); // 메뉴명과 가격 출력 버튼 붙이기
+			aBtn1.setText("후라이드치킨 (18,000원)"); // 메뉴명과 가격 출력 버튼 붙이기
 			aBtn1.setBackground(Color.WHITE); // 배경색 흰색으로 변경하기
 			
 		aCenter.add(aBtn2); // 패널에 버튼 추가하기(양념치킨)
 			aBtn2.setHorizontalTextPosition(JButton.CENTER); // 버튼 중앙에 사진 붙이기
 			aBtn2.setVerticalTextPosition(JButton.BOTTOM); // 버튼 아래에 메뉴명 붙이기
-			aBtn2.setText("양념치킨 19,000원"); // 메뉴명과 가격 출력 버튼 붙이기
+			aBtn2.setText("양념치킨 (19,000원)"); // 메뉴명과 가격 출력 버튼 붙이기
 			aBtn2.setBackground(Color.WHITE); // 배경색 흰색으로 변경하기
 			
 		aCenter.add(aBtn3); // 패널에 버튼 추가하기(간장치킨)
 			aBtn3.setHorizontalTextPosition(JButton.CENTER); // 버튼 중앙에 사진 붙이기
 			aBtn3.setVerticalTextPosition(JButton.BOTTOM); // 버튼 아래에 메뉴명 붙이기 
-			aBtn3.setText("간장치킨 19,000원"); // 메뉴명과 가격 출력 버튼 붙이기
+			aBtn3.setText("간장치킨 (19,000원)"); // 메뉴명과 가격 출력 버튼 붙이기
 			aBtn3.setBackground(Color.WHITE); // 배경색 흰색으로 변경하기
 			
 		aCenter.add(aBtn4); // 패널에 버튼 추가하기(맵슐랭)
 			aBtn4.setHorizontalTextPosition(JButton.CENTER); // 버튼 중앙에 사진 붙이기
 			aBtn4.setVerticalTextPosition(JButton.BOTTOM); // 버튼 아래에 메뉴명 붙이기
-			aBtn4.setText("맵슐랭치킨 20,000원"); // 메뉴명과 가격 출력 버튼 붙이기
+			aBtn4.setText("맵슐랭치킨 (20,000원)"); // 메뉴명과 가격 출력 버튼 붙이기
 			aBtn4.setBackground(Color.WHITE); // 배경색 흰색으로 변경하기
 			
 		aCenter.add(aBtn5); // 패널에 버튼 추가하기(크리미양파치킨)
 			aBtn5.setHorizontalTextPosition(JButton.CENTER); // 버튼 중앙에 사진 붙이기
 			aBtn5.setVerticalTextPosition(JButton.BOTTOM); // 버튼 아래에 메뉴명 붙이기
-			aBtn5.setText("크리미양파치킨 21,000원"); // 메뉴명과 가격 출력 버튼 붙이기
+			aBtn5.setText("크리미양파치킨 (21,000원)"); // 메뉴명과 가격 출력 버튼 붙이기
 			aBtn5.setBackground(Color.WHITE); // 배경색 흰색으로 변경하기
 			
 		aCenter.add(aBtn6); // 패널에 버튼 추가하기(치요링치킨)
 			aBtn6.setHorizontalTextPosition(JButton.CENTER); // 버튼 중앙에 사진 붙이기
 			aBtn6.setVerticalTextPosition(JButton.BOTTOM); // 버튼 아래에 메뉴명 붙이기
-			aBtn6.setText("치요링치킨 21,000원"); // 메뉴명과 가격 출력 버튼 붙이기
+			aBtn6.setText("치요링치킨 (21,000원)"); // 메뉴명과 가격 출력 버튼 붙이기
 			aBtn6.setBackground(Color.WHITE); // 배경색 흰색으로 변경하기
 			
 		add(aCenter, BorderLayout.CENTER); // 프레임에 패널 붙이기
@@ -90,7 +90,7 @@ public class PanelA extends JPanel{
 			public void actionPerformed(ActionEvent e) {
 				parent.taMenu.setText(parent.taMenu.getText() + aBtn1.getText() + "\n"); 
 				parent.sum += 18000;
-		        parent.taCost.setText(String.valueOf(parent.sum) + "원");
+		        parent.tfCost.setText(String.valueOf(parent.sum) + "원");
 			} // end of actionPerformed	
 		} ); // end of addActionListener()
 		
@@ -98,7 +98,7 @@ public class PanelA extends JPanel{
 			public void actionPerformed(ActionEvent e) {
 				parent.taMenu.setText(parent.taMenu.getText() + aBtn2.getText() + "\n"); 
 				parent.sum += 19000;
-		        parent.taCost.setText(String.valueOf(parent.sum) + "원");
+		        parent.tfCost.setText(String.valueOf(parent.sum) + "원");
 			} // end of actionPerformed	
 		} ); // end of addActionListener()
 		
@@ -106,7 +106,7 @@ public class PanelA extends JPanel{
 			public void actionPerformed(ActionEvent e) {
 				parent.taMenu.setText(parent.taMenu.getText() + aBtn3.getText() + "\n");
 				parent.sum += 19000;
-		        parent.taCost.setText(String.valueOf(parent.sum) + "원");
+		        parent.tfCost.setText(String.valueOf(parent.sum) + "원");
 			} // end of actionPerformed	
 		} ); // end of addActionListener()
 		
@@ -114,7 +114,7 @@ public class PanelA extends JPanel{
 			public void actionPerformed(ActionEvent e) {
 				parent.taMenu.setText(parent.taMenu.getText() + aBtn4.getText() + "\n");
 				parent.sum += 20000;
-		        parent.taCost.setText(String.valueOf(parent.sum) + "원");
+		        parent.tfCost.setText(String.valueOf(parent.sum) + "원");
 			} // end of actionPerformed	
 		} ); // end of addActionListener()
 		
@@ -122,7 +122,7 @@ public class PanelA extends JPanel{
 			public void actionPerformed(ActionEvent e) {
 				parent.taMenu.setText(parent.taMenu.getText() + aBtn5.getText() + "\n");
 				parent.sum += 21000;
-		        parent.taCost.setText(String.valueOf(parent.sum) + "원");
+		        parent.tfCost.setText(String.valueOf(parent.sum) + "원");
 			} // end of actionPerformed	
 		} ); // end of addActionListener()
 		
@@ -130,7 +130,7 @@ public class PanelA extends JPanel{
 			public void actionPerformed(ActionEvent e) {
 				parent.taMenu.setText(parent.taMenu.getText() + aBtn6.getText() + "\n");
 				parent.sum += 21000;
-		        parent.taCost.setText(String.valueOf(parent.sum) + "원");
+		        parent.tfCost.setText(String.valueOf(parent.sum) + "원");
 			} // end of actionPerformed	
 		} ); // end of addActionListener()
 		

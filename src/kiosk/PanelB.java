@@ -76,6 +76,8 @@ public class PanelB extends JPanel{
       aBtn.addActionListener(new ActionListener() {
          public void actionPerformed(ActionEvent e) {
             parent.taMenu.setText(parent.taMenu.getText() + aBtn.getText() + "\n");
+            parent.sum += 4500;
+	        parent.tfCost.setText(String.valueOf(parent.sum) + "원");
          }    // end of ActionEvent()
       });    // end of ActionListener()
 
@@ -83,6 +85,8 @@ public class PanelB extends JPanel{
       bBtn.addActionListener(new ActionListener() {
          public void actionPerformed(ActionEvent e) {
             parent.taMenu.setText(parent.taMenu.getText() + bBtn.getText() + "\n");
+            parent.sum += 4000;
+	        parent.tfCost.setText(String.valueOf(parent.sum) + "원");
          }    // end of ActionEvent()
       });      // end of ActionListener()
 
@@ -90,6 +94,8 @@ public class PanelB extends JPanel{
       cBtn.addActionListener(new ActionListener() {
          public void actionPerformed(ActionEvent e) {
             parent.taMenu.setText(parent.taMenu.getText() + cBtn.getText() + "\n");
+            parent.sum += 4000;
+	        parent.tfCost.setText(String.valueOf(parent.sum) + "원");
          }   // end of ActionEvent()
       });      // end of ActionListener()
 
@@ -97,6 +103,8 @@ public class PanelB extends JPanel{
       dBtn.addActionListener(new ActionListener() {
          public void actionPerformed(ActionEvent e) {
             parent.taMenu.setText(parent.taMenu.getText() + dBtn.getText() + "\n");
+            parent.sum += 4500;
+	        parent.tfCost.setText(String.valueOf(parent.sum) + "원");
          }   // end of ActionEvent()
       });    // end of ActionListener()
 
